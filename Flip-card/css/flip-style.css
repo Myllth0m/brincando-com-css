@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #2C3E50;
+}
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.container img {
+    width: 320px;
+    border: 1px solid #BDC3C7;
+    box-shadow: 0 0 8px #BDC3C7;
+    border-radius: 16px;
+    transition: .6s;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .container img {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    font-family: cursive;
+}
+.container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.container .card {
+    position: relative;
+}
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: .5s;
+}
+.container .card .face-img {
+    display: flex;
+    color: #454585;
+    position: relative;
+    background-color: #333;
+    transform: translateY(100px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.container .card .face-content {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+    transform: translateY(-100px);
+    background-color: #FFF;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.container .card .face-content .content p {
+    margin: 0;
+    padding: 0;
+}
+.container .card .face-content .content a {
+    padding: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #454585;
+    display: inline-block;
+    color: #454585;
+}
+.container .card .face-content .content a:hover {
+    color: #FFF;
+    background-color: #454585;
+}
+.container .card .face-img .content {
+    opacity: .2;
+    transform: .5s;
+}
+.container .card:hover .face-img .content {
+    opacity: 1;
+}
+.container .card:hover .face-img {
+    transform: translateY(0);
+    background-color: rgb(238, 235, 45);
+}
+.container .card:hover .face-content {
+    transform: translateY(0);
+}
